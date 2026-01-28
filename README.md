@@ -1,2 +1,2 @@
-# mlops
-Code related to MLOPs
+# mlops_related project
+This is a predictive model that can classify whether or not a patient is likely to have diabetes based on their health attributes. This is a ML pipeline using a Gradient Boosting classifier to analyze patient data and predict diabetes outcomes (class label 1: diabetes, 0: no diabetes). The outcome involve deploying this model and enable real-time predictions for clinical use.
