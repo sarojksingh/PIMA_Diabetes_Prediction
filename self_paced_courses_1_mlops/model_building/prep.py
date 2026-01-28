@@ -11,11 +11,11 @@ from sklearn.preprocessing import LabelEncoder
 from huggingface_hub import login, HfApi
 
 #for getting token from colab
-from google.colab import userdata
+#from google.colab import userdata
 
 # Define constants for the dataset and output paths
-#api = HfApi(token=os.getenv("HF_TOKEN"))
-api = HfApi(token=userdata.get('HF_TOKEN'))
+api = HfApi(token=os.getenv("HF_TOKEN"))
+#api = HfApi(token=userdata.get('HF_TOKEN'))
 DATASET_PATH = "hf://datasets/sarojk8325/PIMA-Diabetes-Prediction/pima.csv"                  # enter the Hugging Face username here
 df = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
